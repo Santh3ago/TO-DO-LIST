@@ -31,30 +31,22 @@ function mostrarTarefas() {
         
         `
   })
-
   listaCompleta.innerHTML = novaLi
-
   localStorage.setItem('lista', JSON.stringify(minhaListaDeItens))
 }
-
 function concluirTarefa(posicao) {
   minhaListaDeItens[posicao].concluida = !minhaListaDeItens[posicao].concluida
-
   mostrarTarefas()
 }
-
 function deletarItem(posicao) {
   minhaListaDeItens.splice(posicao, 1)
-
   mostrarTarefas()
 }
 function recarregarTarefas() {
   const tarefasDoLocalStorage = localStorage.getItem('lista')
-
   if (tarefasDoLocalStorage) {
     minhaListaDeItens = JSON.parse(tarefasDoLocalStorage)
   }
-
   mostrarTarefas()
 }
 recarregarTarefas()
