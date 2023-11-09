@@ -27,7 +27,7 @@
     border: none;
     border-radius: 5px;
     height: 40px;
-    background-color: #003329;
+    background-color: #636363;
     color: #ffffff;
     font-size: 17px;
     padding: 0 15px;
@@ -74,6 +74,6 @@ img {
 }
 
 .done {
-    background-color: #8fac55;
+    background-color: #7dbb00;
     text-decoration: line-through;
 }
